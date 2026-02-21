@@ -1,5 +1,6 @@
 PRESTASHOP DEPLOYMENT ON AWS FREE TIER
- PROJECT OVERVIEW 
+
+PROJECT OVERVIEW 
 
 This project documents the deployment of a PrestaShop e-commerce application on AWS Free Tier using a separate database architecture.
 
@@ -34,7 +35,7 @@ The database was intentionally hosted separately from the application server to 
 
 IMPLEMENTATION STEPS
 
- EC2 Setup
+#EC2 Setup
 
  • Launched Ubuntu EC2 instance (Free Tier)
 
@@ -47,7 +48,7 @@ IMPLEMENTATION STEPS
  • Connected securely using SSH key pair
   Screenshot:
 
-Application Deployment
+#Application Deployment
 
  • Downloaded PrestaShop ZIP file
 
@@ -63,54 +64,81 @@ Application Deployment
 
  📸 Screenshot:
 
-Database Configuration 
+#Database Configuration 
 
  • Created MySQL database using RDS
 
  • Configured:
 
    Database name
+
    Username
+
    Password
+
  • Connected PrestaShop to RDS endpoint
+
  • Verified successful database connection
  📸 Screenshot:
 
-Networking & Public Access
+#Networking & Public Access
+
  • Assigned and managed Elastic IP
+
  • Verified public accessibility via instance public IP
+
  • Confirmed admin panel functionality
+
  • Troubleshot network interface and IP release issues
+
  📸 Screenshot:
 
 TROUBLESHOOTING HIGHLIGHTS 
+
  This deployment required:
+
  • Several hours resolving ZIP extraction challenges
+
  • Multiple SSH and PowerShell commands
+
  • File permission debugging
+
  • Network interface and Elastic IP troubleshooting
+
  • Persistent reconfiguration before successful deployment
 
 The extraction and configuration stage was the most time-consuming part of the project.
 
 RESOURCE CLEANUP
+
  To prevent unexpected billing:
 
  • EC2 instance terminated
+
  • RDS database deleted
+
  • Elastic IP released
+
  • Custom security groups removed
+
  • Default security group retained (standard AWS behavior)
 
 KEY SKILLS STRENGTHED
+
  • Cloud infrastructure setup
+
  • Linux file and permission management
+
  • Secure network configuration
+
  • Separate database architecture
+
  • Troubleshooting under pressure
+
  • Cost-aware cloud resource management
 
 SECURITY OPERATIONS PERSPECTIVE 
- Although this was a cloud deployment project, it strengthened my understanding of how systems are built and configured in cloud environments.
+
+Although this was a cloud deployment project, it strengthened my understanding of how systems are built and configured in cloud environments.
 
 Understanding infrastructure from a deployment perspective improves the ability to monitor, detect, and respond effectively within a SOC environment.
