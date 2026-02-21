@@ -1,47 +1,74 @@
 PRESTASHOP DEPLOYMENT ON AWS FREE TIER
  PROJECT OVERVIEW 
- This project documents the deployment of a PrestaShop e-commerce application on AWS Free Tier using a separate database architecture.
+
+This project documents the deployment of a PrestaShop e-commerce application on AWS Free Tier using a separate database architecture.
 
 The objective was to:
 
  • Launch a cloud-based server
+
  • Deploy and configure the application
- • Host the database separately from the application server
+
+ • Host the database separately from the
+ application server
+
  • Ensure public accessibility
+
  • Clean up cloud resources to avoid unnecessary billing
 
 This project required extensive troubleshooting, persistence, and infrastructure understanding.
 
 ARCHITECTURE 
+
  • Application Server: Amazon EC2 (Ubuntu)
+
  • Database Server: Amazon RDS (MySQL)
+
  • Application: PrestaShop
+
  • File Transfer Tool: FileZilla
+
  • Access Method: SSH (PowerShell)
 
 The database was intentionally hosted separately from the application server to follow better architectural and security practices.
 
 IMPLEMENTATION STEPS
+
  EC2 Setup
+
  • Launched Ubuntu EC2 instance (Free Tier)
+
  • Configured Security Group:
+
    Port 22 (SSH)
+
    Port 80 (HTTP)
+
  • Connected securely using SSH key pair
   Screenshot:
 
 Application Deployment
+
  • Downloaded PrestaShop ZIP file
+
  • Uploaded to /var/www/html/
+
  • Extracted and configured files
+
  • Resolved file permission issues
+
  • Completed browser-based installation
+
  • Removed install directory for security
+
  📸 Screenshot:
 
 Database Configuration 
+
  • Created MySQL database using RDS
+
  • Configured:
+
    Database name
    Username
    Password
