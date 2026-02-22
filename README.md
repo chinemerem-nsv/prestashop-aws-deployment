@@ -35,7 +35,7 @@ The database was intentionally hosted separately from the application server to 
 
 IMPLEMENTATION STEPS
 
-#EC2 Setup
+1. EC2 Setup
 
  • Launched Ubuntu EC2 instance (Free Tier)
 
@@ -50,7 +50,7 @@ IMPLEMENTATION STEPS
   
 ![EC2 Instance](screenshots/ec2-instance.png.png)
 
-#Application Deployment
+2. Application Deployment
 
  • Downloaded PrestaShop ZIP file
 
@@ -84,7 +84,7 @@ IMPLEMENTATION STEPS
  
  ![RDS Dashboard](screenshots/rds-dashboard.png.png)
 
-#Networking & Public Access
+3. Networking & Public Access
 
  • Assigned and managed Elastic IP
 
