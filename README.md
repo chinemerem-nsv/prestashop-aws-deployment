@@ -66,7 +66,7 @@ IMPLEMENTATION STEPS
  
 ![SSH Session](screenshots/ssh-session.png.png)
 
-#Database Configuration 
+3. Database Configuration 
 
  • Created MySQL database using RDS
 
@@ -84,7 +84,7 @@ IMPLEMENTATION STEPS
  
  ![RDS Dashboard](screenshots/rds-dashboard.png.png)
 
-3. Networking & Public Access
+4. Networking & Public Access
 
  • Assigned and managed Elastic IP
 
