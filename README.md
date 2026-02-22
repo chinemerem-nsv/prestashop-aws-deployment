@@ -47,6 +47,8 @@ IMPLEMENTATION STEPS
 
  • Connected securely using SSH key pair
   Screenshot:
+  
+! [EC2 Instance] (screenshots/ec2-instance.png)
 
 #Application Deployment
 
@@ -61,8 +63,8 @@ IMPLEMENTATION STEPS
  • Completed browser-based installation
 
  • Removed install directory for security
-
- 📸 Screenshot:
+ 
+![SSH Session] (screenshots/ssh-session.png)
 
 #Database Configuration 
 
@@ -75,11 +77,12 @@ IMPLEMENTATION STEPS
    Username
 
    Password
-
+   
  • Connected PrestaShop to RDS endpoint
 
  • Verified successful database connection
- 📸 Screenshot:
+ 
+ ![RDS Dashboard] (screenshots/rds-dashboard.png)
 
 #Networking & Public Access
 
@@ -91,7 +94,7 @@ IMPLEMENTATION STEPS
 
  • Troubleshot network interface and IP release issues
 
- 📸 Screenshot:
+ ![Prestashop Homepage] (screenshots/prestashop-homepage.png)
 
 TROUBLESHOOTING HIGHLIGHTS 
 
@@ -122,6 +125,8 @@ RESOURCE CLEANUP
  • Custom security groups removed
 
  • Default security group retained (standard AWS behavior)
+ ![Clean-up EC2] (screenshots/cleanup-ec2.png)
+ ![Clean-up RDS] (screenshots/cleanup-rds.png)
 
 KEY SKILLS STRENGTHED
 
