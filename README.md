@@ -1,10 +1,10 @@
-PRESTASHOP DEPLOYMENT ON AWS FREE TIER
+# PRESTASHOP DEPLOYMENT ON AWS FREE TIER
 
-PROJECT OVERVIEW 
+## PROJECT OVERVIEW 
 
 This project documents the deployment of a PrestaShop e-commerce application on AWS Free Tier using a separate database architecture.
 
-The objective was to:
+### The objective was to:
 
  • Launch a cloud-based server
 
@@ -19,7 +19,9 @@ The objective was to:
 
 This project required extensive troubleshooting, persistence, and infrastructure understanding.
 
-ARCHITECTURE 
+---
+
+## ARCHITECTURE 
 
  • Application Server: Amazon EC2 (Ubuntu)
 
@@ -33,9 +35,11 @@ ARCHITECTURE
 
 The database was intentionally hosted separately from the application server to follow better architectural and security practices.
 
-IMPLEMENTATION STEPS
+---
 
-1. EC2 Setup
+## IMPLEMENTATION STEPS
+
+### 1. EC2 Setup
 
  • Launched Ubuntu EC2 instance (Free Tier)
 
@@ -50,7 +54,9 @@ IMPLEMENTATION STEPS
   
 ![EC2 Instance](screenshots/ec2-instance.png.png)
 
-2. Application Deployment
+---
+
+### 2. Application Deployment
 
  • Downloaded PrestaShop ZIP file
 
@@ -66,7 +72,9 @@ IMPLEMENTATION STEPS
  
 ![SSH Session](screenshots/ssh-session.png.png)
 
-3. Database Configuration 
+---
+
+### 3. Database Configuration 
 
  • Created MySQL database using RDS
 
@@ -83,8 +91,10 @@ IMPLEMENTATION STEPS
  • Verified successful database connection
  
  ![RDS Dashboard](screenshots/rds-dashboard.png.png)
+ 
+---
 
-4. Networking & Public Access
+### 4. Networking & Public Access
 
  • Assigned and managed Elastic IP
 
@@ -95,10 +105,12 @@ IMPLEMENTATION STEPS
  • Troubleshot network interface and IP release issues
 
  ![Prestashop Homepage](screenshots/prestashop-homepage.png.png)
+ 
+---
 
-TROUBLESHOOTING HIGHLIGHTS 
+## TROUBLESHOOTING HIGHLIGHTS 
 
- This deployment required:
+### This deployment required:
 
  • Several hours resolving ZIP extraction challenges
 
@@ -112,9 +124,11 @@ TROUBLESHOOTING HIGHLIGHTS
 
 The extraction and configuration stage was the most time-consuming part of the project.
 
-RESOURCE CLEANUP
+---
 
- To prevent unexpected billing:
+## RESOURCE CLEANUP
+
+### To prevent unexpected billing:
 
  • EC2 instance terminated
 
@@ -129,8 +143,10 @@ RESOURCE CLEANUP
  ![Clean-up EC2](screenshots/cleanup-ec2.png.png)
  
  ![Clean-up RDS](screenshots/cleanup-rds.png.png)
+ 
+---
 
-KEY SKILLS STRENGTHED
+## KEY SKILLS STRENGTHED
 
  • Cloud infrastructure setup
 
@@ -143,8 +159,10 @@ KEY SKILLS STRENGTHED
  • Troubleshooting under pressure
 
  • Cost-aware cloud resource management
+ 
+---
 
-SECURITY OPERATIONS PERSPECTIVE 
+## SECURITY OPERATIONS PERSPECTIVE 
 
 Although this was a cloud deployment project, it strengthened my understanding of how systems are built and configured in cloud environments.
 
